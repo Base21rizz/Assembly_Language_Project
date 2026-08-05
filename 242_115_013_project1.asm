@@ -11,7 +11,7 @@
     t DB            ?
     o DB            ?
     at DB           ?
-    ao DB           ?
+    ao DB           ?                    
     msg1 DB "Student Result$"
     msg2 DB 0DH,0AH,"Total Marks : $"
     msg3 DB 0DH,0AH,"Average : $"
@@ -43,7 +43,7 @@ MAIN PROC
     CMP average, 60
     JAE GRADE_C      ;Jump to GRADE_C if mark is above 60
     MOV grade, 'F'
-    JMP SPLIT        ;Jump to SPLIT if mark is below 60
+    JMP SPLIT        ;Jump to SPLIT if mark is below   60
 
 GRADE_A:
     MOV grade, 'A'
