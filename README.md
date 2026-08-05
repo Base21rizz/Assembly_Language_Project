@@ -6,7 +6,6 @@ Welcome to my dive into **8086 Assembly** using **EMU8086**. No frameworks, no g
 
 This repo contains **4 mini-projects**, each solving a real (if small) problem end to end in pure `.asm`.
 
----
 
 ## 📁 What's Inside
 
@@ -17,7 +16,6 @@ This repo contains **4 mini-projects**, each solving a real (if small) problem e
 | 3 | 🛒 Shopping / Billing System | `242_115_013_project3.asm` | A tiny POS system — pick items, checkout, get a bill |
 | 4 | 🔐 Password Verification System | `242_115_013_project4.asm` | 3 attempts to guess the right digit, or you're locked out |
 
----
 
 ## 🎓 Project 1 — Student Result Calculator
 
@@ -43,14 +41,8 @@ Programming   = 91
 | < 60 | F |
 
 **Sample Output:**
-```
-Student Result
-Total Marks : 251
-Average     : 83
-Grade       : A
-```
+<img src="images/Student_result_calculator.png" alt="Student Result Calculator">
 
----
 
 ## ➗ Project 2 — Menu-Driven Calculator
 
@@ -66,7 +58,8 @@ SIMPLE CALCULATOR
 
 Pick a number, get the result, and the menu **reappears** — because real programs don't quit after one operation. Choose `4` when you're done playing calculator.
 
----
+**Sample Output:**
+<img src="images/Menu_Driven_Calculator.png"  alt="Menu-Driven Calculator">
 
 ## 🛒 Project 3 — Shopping / Billing System
 
@@ -99,8 +92,10 @@ Total Bill        : xxx
 ```
 
 Then it's back to the menu — because the shop doesn't close after one sale.
+**Sample Output:**
+<img src="images/Shopping _Billing_System1.png"  alt="Shopping / Billing System">
+<img src="images/Shopping_Billing_System2.png"  alt="Shopping / Billing System2">
 
----
 
 ## 🔐 Project 4 — Password Verification System
 
@@ -117,8 +112,7 @@ Enter Password: _
 Wrong Password
 Attempts Left: 2
 ```
-
----
+<img src="images/Password_Verification_System.png"  alt="Password Verification System">
 
 ## 🛠️ Tech Stack
 
@@ -126,16 +120,12 @@ Attempts Left: 2
 - **Emulator/IDE:** [EMU8086](http://www.emu8086.com/)
 - **Core instructions used:** `MOV`, `ADD`, `SUB`, `MUL`, `CMP`, `JMP` family, `INT 21h` (DOS interrupts for I/O), loops via `LOOP` / conditional jumps
 
----
-
 ## ▶️ How to Run
 
 1. Download and install **EMU8086**.
 2. Open any `.asm` file from this repo in the EMU8086 editor.
 3. Hit **Compile** (F5) then **Emulate / Run**.
 4. Follow the on-screen prompts — type your menu choices or password digit and press Enter.
-
----
 
 ## 🧠 What I Actually Learned Building This
 
@@ -145,14 +135,10 @@ Attempts Left: 2
 - Basic string/number output via DOS interrupts (`INT 21h`) — no `printf`, no mercy
 - Appreciating every high-level language I've ever used, immediately after finishing this project
 
----
-
 ## 📌 Notes
 
 - All input values (marks, prices, password) are **hardcoded in memory** per the project requirements — this isn't meant to take dynamic input beyond menu choices and the password digit.
 - Each project is self-contained in its own `.asm` file, so you can compile and run them independently.
-
----
 
 ### 🏁 Final Word
 
