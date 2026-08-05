@@ -37,13 +37,13 @@ MAIN PROC
     MOV average, AL
 
     CMP average, 80
-    JAE GRADE_A
+    JAE GRADE_A      ;Jump to GRADE_A if mark is above 80
     CMP average, 70
-    JAE GRADE_B
+    JAE GRADE_B      ;Jump to GRADE_B if mark is above 70
     CMP average, 60
-    JAE GRADE_C
+    JAE GRADE_C      ;Jump to GRADE_C if mark is above 60
     MOV grade, 'F'
-    JMP SPLIT
+    JMP SPLIT        ;Jump to SPLIT if mark is below 60
 
 GRADE_A:
     MOV grade, 'A'
@@ -56,7 +56,7 @@ GRADE_B:
 GRADE_C:
     MOV grade, 'C'
 
-    SPLIT:
+SPLIT:
     MOV AX, total
     MOV BL, 100
     DIV BL
